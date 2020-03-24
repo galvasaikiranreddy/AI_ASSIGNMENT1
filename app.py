@@ -28,7 +28,7 @@ studentdb = [
 
 @app.route('/')
 def he():
-    return 'hello'
+    return 'hello world'
 
 
 @app.route('/sampledb')
@@ -52,6 +52,7 @@ def put_db(index):
 def delete_db(index):
     studentdb.pop(index)
     return 'None', 200
+
 
 
 app.run()
